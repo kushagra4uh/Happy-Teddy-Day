@@ -1,0 +1,231 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/happy-valentines-day-love-template_1284-50478.jpg?size=626&ext=jpg&ga=GA1.1.1192415689.1706790240&semt=ais");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.outer-box{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top:10%;
+}
+#teddy-head{
+    width:150px;
+    aspect-ratio:1;
+    background-color:brown;
+    border-radius: 80px;
+    margin-bottom:-30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#teddy-upper-body-component{
+    display:flex;
+}
+#teddy-body{
+    height:150px;
+    aspect-ratio:1;
+    background-color:brown;
+    border-radius:60px;
+    border-bottom-left-radius:unset;
+    border-bottom-right-radius:unset;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+}
+.teddy-limb{
+    background-color:brown;
+    height:150px;
+    aspect-ratio:4/7;
+    border-radius:90px;
+    display:flex;
+    justify-content: center;    
+}
+#left-hand{
+    transform:rotate(60deg);
+    margin-right:-40px;
+}
+#right-hand{
+    transform:rotate(-60deg);
+    margin-left:-40px;
+}
+#teddy-lower-body-component{
+    display:flex;
+    margin-top:-30px;
+}
+#teddy-lower-body{
+    width:150px;
+    height:75px;
+    background-color: brown;
+    border-radius:10px;
+    border-bottom-left-radius:65px;
+    border-bottom-right-radius:65px;
+}
+#left-leg{
+    transform:rotate(-60deg);
+    margin-right:-40px;
+    display:flex;
+    flex-direction: column;
+}
+#right-leg{
+    transform:rotate(60deg);
+    margin-left:-40px;
+    display:flex;
+    flex-direction: column;
+}
+#teddy-body-patch,#teddy-lower-body-patch{
+    background-color:pink;
+    margin:0 auto;
+    width:60%;
+    height:80%;
+    border-radius: inherit;
+    z-index:2;
+}
+#eyes{
+    width:60%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#left-eye,#right-eye{
+    background-color:black;
+    width:20%;
+    height:15px;
+    border-radius:12px;
+}
+.pad{
+    margin:auto;
+    width:70%;
+    height:90px;
+    border-radius:inherit;
+    background-color: burlywood;
+}
+#hand-pad{
+    border-radius:100px;
+    height:65px;
+    margin-top:75px;
+}
+#toes{
+    border-radius: inherit;
+    width:90%;
+    height:20px;
+    margin-top:25%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#toe{
+    width:20%;
+    height:90%;
+    border-radius:inherit;
+    background-color: burlywood;
+}
+#ears{
+    width:80%;
+    height:40px;
+    margin-top:-10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:inherit;
+}
+#ear{
+    height:100%;
+    width:40px;
+    border-radius:inherit;
+    background-color: brown;
+}
+#mouth{
+    background-color:lightcoral;
+    width:40%;
+    height:50px;
+    border-radius:inherit;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:50px;
+    font-family: cursive;
+}
+#heart-box{
+    position: absolute;
+    z-index: 10;
+    width:700px;
+    height:500px;
+    /*background-color: orange;*/
+    display: flex;
+    flex-direction: column;
+}
+#upper-heart-part-box,#lower-heart-part-box{
+    width:100%;
+    height:50%;
+    /*background-color:blue;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#left-upper-heart,#right-upper-heart{
+    width:50%;
+    aspect-ratio: 1;
+    background-color:red;
+    border-radius:180px;
+    z-index: 1;
+}
+#left-upper-heart{
+    margin-right:-30px;
+}
+#right-upper-heart{
+    margin-left: -30px;
+}
+#lower-heart-part-box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#lower-heart{
+    background-color: red;
+    width:49.5%;
+    aspect-ratio:1;
+    transform: rotate(45deg);
+    margin-top:-210px;
+}
+#outer-heart-box{
+    position: absolute;
+    top: -32px;
+    right:768px;
+    z-index: 100;
+}
+#heart-box:hover #left-upper-heart{
+    background-color: rgba(0,0,0,0);
+    transition:2s;
+}
+#heart-box:hover #right-upper-heart{
+    background-color: rgba(0,0,0,0);
+    transition:2s;
+}
+#heart-box:hover #lower-heart{
+    background-color: rgba(0,0,0,0);
+    transition:2s;
+}
+h1{
+    font-size:45px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    top: 300px;
+    z-index: 100;
+    text-shadow:15px 15px 30px  white;
+    color:purple;
+}
+h2{
+    font-size:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+    top: 300px;
+    z-index: 100;
+    text-shadow:15px 15px 30px  white;
+    color:rgb(4, 16, 149);
+}
